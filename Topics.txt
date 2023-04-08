@@ -1,0 +1,1 @@
+.Net 6, C#, Dapper, Entity Framework, Swagger, Serilog, asynchronous programming, MSAL Authentication
