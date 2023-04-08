@@ -1,0 +1,15 @@
+D:\Data\d drive\Corp\KTree\srfApr2023\UnderstandingTypeSaftyApp\UnderstandingTypeSaftyApp\bin\Debug\net6.0\UnderstandingTypeSaftyApp.exe
+D:\Data\d drive\Corp\KTree\srfApr2023\UnderstandingTypeSaftyApp\UnderstandingTypeSaftyApp\bin\Debug\net6.0\UnderstandingTypeSaftyApp.deps.json
+D:\Data\d drive\Corp\KTree\srfApr2023\UnderstandingTypeSaftyApp\UnderstandingTypeSaftyApp\bin\Debug\net6.0\UnderstandingTypeSaftyApp.runtimeconfig.json
+D:\Data\d drive\Corp\KTree\srfApr2023\UnderstandingTypeSaftyApp\UnderstandingTypeSaftyApp\bin\Debug\net6.0\UnderstandingTypeSaftyApp.dll
+D:\Data\d drive\Corp\KTree\srfApr2023\UnderstandingTypeSaftyApp\UnderstandingTypeSaftyApp\bin\Debug\net6.0\UnderstandingTypeSaftyApp.pdb
+D:\Data\d drive\Corp\KTree\srfApr2023\UnderstandingTypeSaftyApp\UnderstandingTypeSaftyApp\obj\Debug\net6.0\UnderstandingTypeSaftyApp.csproj.AssemblyReference.cache
+D:\Data\d drive\Corp\KTree\srfApr2023\UnderstandingTypeSaftyApp\UnderstandingTypeSaftyApp\obj\Debug\net6.0\UnderstandingTypeSaftyApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Data\d drive\Corp\KTree\srfApr2023\UnderstandingTypeSaftyApp\UnderstandingTypeSaftyApp\obj\Debug\net6.0\UnderstandingTypeSaftyApp.AssemblyInfoInputs.cache
+D:\Data\d drive\Corp\KTree\srfApr2023\UnderstandingTypeSaftyApp\UnderstandingTypeSaftyApp\obj\Debug\net6.0\UnderstandingTypeSaftyApp.AssemblyInfo.cs
+D:\Data\d drive\Corp\KTree\srfApr2023\UnderstandingTypeSaftyApp\UnderstandingTypeSaftyApp\obj\Debug\net6.0\UnderstandingTypeSaftyApp.csproj.CoreCompileInputs.cache
+D:\Data\d drive\Corp\KTree\srfApr2023\UnderstandingTypeSaftyApp\UnderstandingTypeSaftyApp\obj\Debug\net6.0\UnderstandingTypeSaftyApp.dll
+D:\Data\d drive\Corp\KTree\srfApr2023\UnderstandingTypeSaftyApp\UnderstandingTypeSaftyApp\obj\Debug\net6.0\refint\UnderstandingTypeSaftyApp.dll
+D:\Data\d drive\Corp\KTree\srfApr2023\UnderstandingTypeSaftyApp\UnderstandingTypeSaftyApp\obj\Debug\net6.0\UnderstandingTypeSaftyApp.pdb
+D:\Data\d drive\Corp\KTree\srfApr2023\UnderstandingTypeSaftyApp\UnderstandingTypeSaftyApp\obj\Debug\net6.0\UnderstandingTypeSaftyApp.genruntimeconfig.cache
+D:\Data\d drive\Corp\KTree\srfApr2023\UnderstandingTypeSaftyApp\UnderstandingTypeSaftyApp\obj\Debug\net6.0\ref\UnderstandingTypeSaftyApp.dll
