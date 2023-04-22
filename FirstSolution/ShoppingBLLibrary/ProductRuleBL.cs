@@ -5,13 +5,13 @@ namespace ShoppingBLLibrary
 {
     public class ProductRuleBL
     {
-        private readonly IRepo _repo;
+        private readonly IRepo<int,Product> _repo;
 
         public ProductRuleBL()
         {
             
         }
-        public ProductRuleBL(IRepo repo)
+        public ProductRuleBL(IRepo<int, Product> repo)
         {
             _repo = repo;   
         }

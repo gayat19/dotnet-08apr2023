@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace ShoppingDALLibrary
 {
-    public interface IRepo
+    public interface IRepo<K,T>
     {
-        Product Get(int id);
-        Product[] GetAll();
-        Product Edit(Product product);
-        Product Add(Product product);
-        Product Delete(int id);
+        Product Get(K key);
+        ICollection<T> GetAll();
+        T Edit(T item);
+        T Add(T item);
+        T Delete(K key);
     }
 }

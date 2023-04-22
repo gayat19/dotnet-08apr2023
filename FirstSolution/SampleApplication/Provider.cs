@@ -11,11 +11,11 @@ namespace SampleApplication
 {
     internal class Provider
     {
-        IRepo manage;
+        IRepo<int, Product> manage;
         ProductRuleBL productRule;
         public Provider()
         {
-            manage = new ManageProduct();
+            manage = new ProductRepo();
             productRule = new ProductRuleBL(manage);
         }
         public void AddProduct()
