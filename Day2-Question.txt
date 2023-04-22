@@ -1,0 +1,17 @@
+Create an application that will be a ShoppingApp for a Pizza store
+As of now add functionalities that will ensure the folowing
+
+Adding a new PIzza
+Listing All the pizzas
+Edit the Pizza price
+Delete a pizza
+
+Display a menu to do the same
+Ensure you implement as much error handling as possible
+(Just a CRUD application)
+
+The above application to EFCore 
+Explore - Remove, Update.
+
+Implement the IComparable interface
+Explore - IComparer

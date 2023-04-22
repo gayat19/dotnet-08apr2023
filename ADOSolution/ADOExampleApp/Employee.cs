@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,9 @@ namespace ADOExampleApp
         public int Id { get; set; }
         public string Name { get; set; }
         public double Salary { get; set; }
+        public int Dep_Id { get; set; }
+        [ForeignKey("Dep_Id")]
+        public Department Department { get; set; }
 
         public Employee()
         {
