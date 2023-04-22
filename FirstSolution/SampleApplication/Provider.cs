@@ -15,7 +15,7 @@ namespace SampleApplication
         ProductRuleBL productRule;
         public Provider()
         {
-            manage = new ProductRepo();
+            manage = new ProductADORepo();
             productRule = new ProductRuleBL(manage);
         }
         public void AddProduct()
