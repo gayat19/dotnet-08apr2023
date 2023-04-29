@@ -15,7 +15,7 @@ namespace ADOExampleApp
         public string Name { get; set; }
         public double Salary { get; set; }
         public int Dep_Id { get; set; }
-        [ForeignKey("Dep_Id")]
+       // [ForeignKey("Dep_Id")]
         public Department Department { get; set; }
 
         public Employee()
@@ -45,6 +45,13 @@ namespace ADOExampleApp
         public int CompareTo(Employee? other)
         {
             return this.Name.CompareTo(other.Name);
+        }
+    }
+    public class SortEmployeeBySalary : IComparer<Employee>
+    {
+        public int Compare(Employee? x, Employee? y)
+        {
+            return x.Salary.CompareTo(y.Salary);
         }
     }
 }

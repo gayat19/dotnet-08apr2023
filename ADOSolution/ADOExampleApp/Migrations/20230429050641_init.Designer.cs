@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ADOExampleApp.Migrations
 {
     [DbContext(typeof(ProductContext))]
-    [Migration("20230422074802_init")]
+    [Migration("20230429050641_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,19 +25,31 @@ namespace ADOExampleApp.Migrations
 
             modelBuilder.Entity("ADOExampleApp.Department", b =>
                 {
-                    b.Property<int>("DepartmentId")
+                    b.Property<int>("DeptId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DepartmentId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DeptId"), 1L, 1);
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("DepartmentId");
+                    b.HasKey("DeptId");
 
                     b.ToTable("Departments");
+
+                    b.HasData(
+                        new
+                        {
+                            DeptId = 101,
+                            Name = "HR"
+                        },
+                        new
+                        {
+                            DeptId = 102,
+                            Name = "Ops"
+                        });
                 });
 
             modelBuilder.Entity("ADOExampleApp.Employee", b =>
@@ -63,6 +75,15 @@ namespace ADOExampleApp.Migrations
                     b.HasIndex("Dep_Id");
 
                     b.ToTable("Employees");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1000,
+                            Dep_Id = 101,
+                            Name = "Ramu",
+                            Salary = 124434.0
+                        });
                 });
 
             modelBuilder.Entity("ADOExampleApp.Employee", b =>
@@ -71,7 +92,8 @@ namespace ADOExampleApp.Migrations
                         .WithMany("Employees")
                         .HasForeignKey("Dep_Id")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .IsRequired()
+                        .HasConstraintName("fk_Department");
 
                     b.Navigation("Department");
                 });

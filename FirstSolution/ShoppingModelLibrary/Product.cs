@@ -1,6 +1,6 @@
 ﻿namespace ShoppingModelLibrary
 {
-    public class Product:IEquatable<Product>
+    public class Product:IEquatable<Product>,IComparable<Product>
     {
         //int something;
         public int Id { get; set; }
@@ -74,12 +74,29 @@
             return false;
         }
 
+        public int CompareTo(Product? other)
+        {
+            int nameResult = this.Name.CompareTo(other.Name);
+            if (nameResult==0)
+            {
+                return this.Price.CompareTo(other.Price);
+            }
+            return nameResult;
+        }
+
         public static Product operator +(Product p1, Product p2)
         {
             Product result = p1;
             p1.Price += p2.Price;
             p1.Name += " " + p2.Name;
             return result;
+        }
+    }
+    public class SortProductById : IComparer<Product>
+    {
+        public int Compare(Product? x, Product? y)
+        {
+            return x.Id.CompareTo(y.Id);
         }
     }
 }
