@@ -1,0 +1,108 @@
+Welcome to the game
+1) Register
+2) Login
+Please enter your name
+tim
+Please enter your age
+22
+Welcome- your password is your name and age together(tim22)
+your id is 101
+Welcome to the game
+1) Give Word
+2) Guess word
+3) Exit
+Choose an option
+1
+Please enter the word
+what
+Thank you the word is added to the queue
+Welcome to the game
+1) Give Word
+2) Guess word
+3) Exit
+3
+Bye....
+
+Welcome to the game
+1) Register
+2) Login
+---------------------------------
+
+Welcome to the game
+1) Register
+2) Login
+2
+Please enter your id
+101
+Please enter your password
+tim22
+Welcome to the game
+1) Give Word
+2) Guess word
+3) Exit
+Choose an option
+2
+The word is ready
+Start guessing
+love
+Cow - 0, Bull - 0
+Hate
+Cow - 0, Bull -3
+When
+Cow -2, Bull - 0
+What
+Cow -4, Bull -0
+YAyyyy you won
+Welcome to the game
+1) Give Word
+2) Guess word
+3) Exit
+Choose an option
+3
+Byeeee
+Welcome to the game
+1) Register
+2) Login
+
+-------------------------------------
+Welcome to the game
+1) Register
+2) Login
+2
+Please enter your id
+101
+Please enter your password
+tim23
+Invalid password
+Welcome to the game
+1) Register
+2) Login
+2
+Please enter your id
+101
+Please enter your password
+tim22
+Welcome
+Welcome to the game
+1) Give Word
+2) Guess word
+3) Exit
+Choose an option
+2
+Sorry there are currently no words to guess
+Welcome to the game
+1) Give Word
+2) Guess word
+3) Exit
+Choose an option
+
+
+Note: The words can be stored in the database
+User details and attempt details has to be stored in the database
+After the word is given for guess, the word should be removed from the collection
+The last word added should be the first to be given for guess
+Add words and keep the words common for all users
+User can login/Register just to add words
+User can login/Register just to guess words
+First the user has to login/register
+Ensure the application does not stop abruptly
