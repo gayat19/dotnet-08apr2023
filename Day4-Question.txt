@@ -1,0 +1,20 @@
+create an API that will work as a backend for the Pizza Sore
+
+Operations involve
+	Fetch all pizza
+	Fetch pizza based on preference of veg or non-veg
+	Fetch pizzas based on price range
+	Fetch pizza sorted by ascending order of price
+
+	Customer registration
+	Customer Login
+	Customer Update Password
+
+	Pizza add to cart(check vailability and add in multiple quantities)
+	Remove pizza from cart
+	Checkout(Place order)
+
+Please decide on the models
+Choose an approch that is comfortabl for you- code first/database first
+
+	

@@ -8,16 +8,27 @@ namespace FirstAPI.Services
     public class ProductRepo : IRepo<int, Product>
     {
         private readonly ShopContext _context;
+        private readonly ILogger<ProductRepo> _logger;
 
-        public ProductRepo(ShopContext context)
+        public ProductRepo(ShopContext context,ILogger<ProductRepo> logger)
         {
             _context = context;
+            _logger = logger;
         }
         public async Task<Product> Add(Product item)
         {
-            await _context.AddAsync(item);
-            await _context.SaveChangesAsync();
-            return item;
+            try
+            {
+                await _context.AddAsync(item);
+                await _context.SaveChangesAsync();
+                throw new Exception("Check");
+                return item;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+            }
+            return null;
         }
 
         public async Task<Product> Delete(int key)
