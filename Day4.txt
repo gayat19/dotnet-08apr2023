@@ -1,0 +1,33 @@
+Reusability
+Resource orientation
+HTTP
+
+Product ->  Create - POST
+		Update - PUT/PATCH
+		Delete - DELETE
+		Select - GET
+
+https://localhost:34563/Product - GET - get all teh product details
+https://localhost:34563/Product/101 - GET - gets one product with the given ID
+https://localhost:34563/Product - POST - Object in the body - creates a new product
+https://localhost:34563/Product/101 - PUT - Object in the body - Updates the product details
+https://localhost:34563/Product - PUT - Object in the body - Updates the product details pick the identity from body
+https://localhost:34563/Product/101?field=value - PATCH -Update field and value as parameters - Updates the product details
+https://localhost:34563/Product/101? - PATCH - Object in the body -Update field and value from body - Updates the product details
+https://localhost:34563/Product/101 - DELETE - Deletes one product with the given ID
+
+
+
+Less Code
+Call over the web 
+Supports MicroService arch
+Communication made ease - JSON
+1XX - Info
+2XX - Success
+3XX - Redirection
+4XX - CLient side errors
+5XX - Server side error
+
+Open API support
+
+curl -X 'GET' 'http://localhost:14587/api/Employee' -H 'accept: text/plain'
