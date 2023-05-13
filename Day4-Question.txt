@@ -16,5 +16,9 @@ Operations involve
 
 Please decide on the models
 Choose an approch that is comfortabl for you- code first/database first
+Log all exceptions.
+Log when a pizza is not available
+
+
 
 	

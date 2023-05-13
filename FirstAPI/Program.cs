@@ -1,3 +1,4 @@
+using FirstAPI.Filters;
 using FirstAPI.Interfaces;
 using FirstAPI.Models;
 using FirstAPI.Services;
@@ -14,6 +15,7 @@ namespace FirstAPI
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddScoped<MyValidationFilter>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -32,7 +34,6 @@ namespace FirstAPI
             }
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 

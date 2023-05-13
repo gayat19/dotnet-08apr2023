@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using FirstAPI.Filters;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualBasic;
 
 namespace FirstAPI.Controllers
 {
@@ -8,6 +10,7 @@ namespace FirstAPI.Controllers
     public class EmployeeController : ControllerBase
     {
         [HttpGet]
+        [MyHeaderFilter]
         public string SayHello()
         {
             return "Hello World";
