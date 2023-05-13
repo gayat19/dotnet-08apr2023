@@ -1,7 +1,11 @@
 using AuthenticationAPI.Interfaces;
 using AuthenticationAPI.Models;
 using AuthenticationAPI.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace AuthenticationAPI
 {
@@ -23,8 +27,19 @@ namespace AuthenticationAPI
             });
             builder.Services.AddScoped<IRepo, UserRepo>();
             builder.Services.AddScoped<UserService>();
-
-
+            builder.Services.AddScoped<IGenerateToken,TokenService>();
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(opts =>
+                {
+                    opts.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuerSigningKey=true,
+                        IssuerSigningKey= new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetSection("secrectKey").Value)),
+                        ValidateIssuer=false,
+                        ValidateAudience=false
+                };
+                });
+           
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -33,7 +48,7 @@ namespace AuthenticationAPI
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

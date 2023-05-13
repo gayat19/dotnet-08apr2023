@@ -10,10 +10,12 @@ namespace AuthenticationAPI.Services
     public class UserService
     {
         private readonly IRepo _repo;
+        private readonly IGenerateToken _generateToken;
 
-        public UserService(IRepo repo)
+        public UserService(IRepo repo,IGenerateToken generateToken)
         {
             _repo = repo;
+            _generateToken = generateToken;
         }
         public async Task<UserDTO> Login(UserDTO userDTO)
         {
@@ -35,6 +37,8 @@ namespace AuthenticationAPI.Services
                 }
             }
             userDTO.Password = string.Empty;
+            userDTO.Role = result.Role;
+            userDTO.Token = _generateToken.GenerateToken(userDTO);
             return userDTO;
         }
         public async Task<UserDTO> Register(UserDTO userDTO)
@@ -49,6 +53,7 @@ namespace AuthenticationAPI.Services
             };
             var result = await _repo.Add(myDBUser);
             userDTO.Password = string.Empty;
+            userDTO.Token = _generateToken.GenerateToken(userDTO);
             return userDTO;
         }
     }
