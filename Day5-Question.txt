@@ -1,0 +1,6 @@
+Create a token while the user logs on or registered. And add authorization for  the following
+	Pizza add to cart(check vailability and add in multiple quantities)
+	Remove pizza from cart
+	Checkout(Place order)
+
+Also add the validation and action filters that are required
