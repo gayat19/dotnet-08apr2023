@@ -1,0 +1,21 @@
+oAuth -Azure AD
+
+MVC 
+Consumption of API in MVC
+
+Unit Testing & MOQ
+
+
+ (client) ID - 40161235-3369-42f3-877e-1baf1a82d5aa
+
+(tenant) ID - 4e993288-04ff-49cb-97bf-18f34d1bc91e
+Scope - api://40161235-3369-42f3-877e-1baf1a82d5aa/Forecast.Read
+api://40161235-3369-42f3-877e-1baf1a82d5aa/Forecast.Read
+
+
+secret value - 3rj8Q~0c2sMHkaylVeao1T5vrN9IrzXYW1cstdBp
+
+
+https://login.microsoftonline.com/4e993288-04ff-49cb-97bf-18f34d1bc91e/oauth2/v2.0/authorize
+
+https://login.microsoftonline.com/4e993288-04ff-49cb-97bf-18f34d1bc91e/oauth2/v2.0/token

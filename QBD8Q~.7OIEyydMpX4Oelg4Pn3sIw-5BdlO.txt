@@ -1,0 +1,9 @@
+QBD8Q~.7OIEyydMpX4Oelg4Pn3sIw-5BdlOBSbbB
+
+
+
+https://login.microsoftonline.com/4e993288-04ff-49cb-97bf-18f34d1bc91e/oauth2/v2.0/token
+
+
+
+api://f8deb7df-1140-4f08-b8b9-15169f1b7769/Forecast.Read
